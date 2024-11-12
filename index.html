@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasir Restoran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Restoran Lezat</h1>
+        <p>Selamat datang di halaman kasir!</p>
+    </header>
+    
+    <section id="menu">
+        <h2>Daftar Menu</h2>
+        <div class="menu-item">
+            <p>Nasi Goreng</p>
+            <p>Harga: Rp 20,000</p>
+            <label>Jumlah: <input type="number" id="nasi-goreng" value="0" min="0"></label>
+        </div>
+        <div class="menu-item">
+            <p>Mie Ayam</p>
+            <p>Harga: Rp 15,000</p>
+            <label>Jumlah: <input type="number" id="mie-ayam" value="0" min="0"></label>
+        </div>
+        <div class="menu-item">
+            <p>Sate Ayam</p>
+            <p>Harga: Rp 25,000</p>
+            <label>Jumlah: <input type="number" id="sate-ayam" value="0" min="0"></label>
+        </div>
+        <button onclick="hitungTotal()">Hitung Total</button>
+    </section>
+    
+    <section id="cart">
+        <h2>Pesanan Anda</h2>
+        <ul id="order-list"></ul>
+        <h3>Total Harga: <span id="total-harga">Rp 0</span></h3>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
